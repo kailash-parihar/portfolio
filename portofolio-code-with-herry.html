@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kailash Parihar Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1c0c4c;
+            color: white;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        nav {
+            background-color: #0c0202;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 55px;
+            font-weight: 700;
+            font-style: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            list-style: none;
+            justify-content: center;
+            margin: 10px 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(144, 144, 234);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 35px;
+            font-style: bold;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .section1>div {
+            width: 40%;
+        }
+
+        .leftSec {
+            font-size: 2.5rem;
+            justify-content: center;
+            font-weight: 600;
+            font-style: bold;
+
+        }
+
+        .rightSec img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .flex {
+            background-color: #0c0202;
+            display: flex;
+            justify-content: space-around;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mr. Kep Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a>
+                    <li>
+                    <li><a href="#">Services</a>
+                    <li>
+                    <li><a href="#">Project</a>
+                    <li>
+                    <li><a href="#">About Us</a>
+                    <li>
+                    <li><a href="#">Contact Us</a>
+                    <li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="leftSec">
+                Hi, My Name is <span class="purple">Kailash Parihar</span>
+                <div>And, I am a Passionate</div>
+                <div></div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </div>
+            <div class="rightSec">
+                <img src="web-devlopment.png" alt="web-devlopment">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer1">
+                <h3>Portfolio Mr. Kep</h3>
+            </div>
+            <div class="footer2">
+                <h3>Social Media</h3>
+            </div>
+            <div class="footer3">
+                <h3>Projects</h3>
+            </div>
+            <div class="footer4">
+                <h3>About Us</h3>
+            </div>
+        </div>
+    </footer>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper', 'WordPress Blogger', 'Excel Master', 'DataBase Expert'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
